@@ -8,7 +8,7 @@
             Width="280" Height="150"
             ResizeMode="NoResize"
             SizeToContent="Height"
-            Title="Нумерация листов альбома" 
+            Title="Обновление флажков." 
             WindowStartupLocation="CenterScreen">
         <Grid Margin="20">
             <StackPanel>

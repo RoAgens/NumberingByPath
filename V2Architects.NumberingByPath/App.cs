@@ -12,9 +12,9 @@ namespace V2Architects.NumberingByPath
     public class App : IExternalApplication
     {
         private string tabName = "V2 Tools";
-        private string panelName = "Листы";
-        private string buttonName = "Унификация\nномеров";
-        private string buttonTooltip = "Унификация номеров листов.\n" +
+        private string panelName = "Элементы АР";
+        private string buttonName = "Нумерация\nпо сплайну";
+        private string buttonTooltip = "Нумерация помещений активного вида по выбранному спалйну.\n" +
                                       $"v{typeof(App).Assembly.GetName().Version}";
 
         public string AssemblyPath { get => typeof(App).Assembly.Location; }

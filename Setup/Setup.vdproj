@@ -11,30 +11,79 @@
 "SccLocalPath" = "8:"
 "SccAuxPath" = "8:"
 "SccProvider" = "8:"
+"BackwardsCompatibleGUIDGeneration" = "8:TRUE"
     "Hierarchy"
     {
         "Entry"
         {
-        "MsmKey" = "8:_579C4FC49B064830AA188C1B4FCA21FF"
+        "MsmKey" = "8:_24197E7C332343609D77D4E53A6EFE16"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B27F458BF7594035AA2F4155A2056130"
+        "MsmKey" = "8:_24B229BD64A144A3973218F76DC7DE34"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C688E8C1859743D8B57FD84A1F094BEF"
+        "MsmKey" = "8:_2E6D1FF5DD2A48219C83B6A345EFC7BF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F5B18662FDE54BE486D277FD5EE9FED3"
+        "MsmKey" = "8:_65032799C087405DA4E5D6EDEA81222A"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6A24DFAA158A4FC19B6867319F2456B5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8CB7DEB61AE94641841650503E603EEF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A13F9CE53FD84F4ABD526F0705C9B93F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B5F929A01A374E72B20D8209DDB99636"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8CB7DEB61AE94641841650503E603EEF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A13F9CE53FD84F4ABD526F0705C9B93F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_24B229BD64A144A3973218F76DC7DE34"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6A24DFAA158A4FC19B6867319F2456B5"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -69,6 +118,11 @@
                     "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
                     "ProductCode" = "8:.NETFramework,Version=v4.7.2"
                     }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.8"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.8 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.8"
+                    }
                 }
             }
         }
@@ -77,7 +131,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\V2Architects_NumberSheets_Setup.msi"
+        "OutputFilename" = "8:Release\\NumberingByPath_Setup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -120,7 +174,7 @@
         {
             "LaunchCondition"
             {
-                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_836DC9CDAFDD4A4D95D31320661E4A33"
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_4082B0C3AC2B483696B1018DDB05FE66"
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
@@ -132,12 +186,12 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_579C4FC49B064830AA188C1B4FCA21FF"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_24197E7C332343609D77D4E53A6EFE16"
             {
-            "SourcePath" = "8:..\\V2Architects.NumberSheets\\V2Architects_NumberSheets.addin"
-            "TargetName" = "8:V2Architects_NumberSheets.addin"
+            "SourcePath" = "8:..\\V2Architects.NumberingByPath\\V2Architects.NumberingByPath.addin"
+            "TargetName" = "8:V2Architects.NumberingByPath.addin"
             "Tag" = "8:"
-            "Folder" = "8:_65252DC508124341BA0EB8CFF906C603"
+            "Folder" = "8:_114113467B1C46F2BDE61BF7BC07C3E9"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -152,12 +206,23 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B27F458BF7594035AA2F4155A2056130"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_24B229BD64A144A3973218F76DC7DE34"
             {
-            "SourcePath" = "8:..\\V2Architects.NumberSheets\\V2Architects_NumberSheets.addin"
-            "TargetName" = "8:V2Architects_NumberSheets.addin"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:V2Architects.NumberingByPath, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_24B229BD64A144A3973218F76DC7DE34"
+                    {
+                    "Name" = "8:V2Architects.NumberingByPath.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\V2Architects.NumberingByPath\\bin\\Release\\V2Architects.NumberingByPath.dll"
+            "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_41ACD0E35ECA4A6EA4DD4376BA18EFF5"
+            "Folder" = "8:_7663C9DF6C3541F6B931060324E9CB74"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -172,12 +237,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C688E8C1859743D8B57FD84A1F094BEF"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2E6D1FF5DD2A48219C83B6A345EFC7BF"
             {
-            "SourcePath" = "8:..\\V2Architects.NumberSheets\\V2Architects_NumberSheets.addin"
-            "TargetName" = "8:V2Architects_NumberSheets.addin"
+            "SourcePath" = "8:..\\V2Architects.NumberingByPath\\V2Architects.NumberingByPath.addin"
+            "TargetName" = "8:V2Architects.NumberingByPath.addin"
             "Tag" = "8:"
-            "Folder" = "8:_69EAC508616E4A17A722601D23309DA0"
+            "Folder" = "8:_61ABB781AD89466AA37E0E229413988E"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -192,12 +257,125 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F5B18662FDE54BE486D277FD5EE9FED3"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_65032799C087405DA4E5D6EDEA81222A"
             {
-            "SourcePath" = "8:..\\V2Architects.NumberSheets\\V2Architects_NumberSheets.addin"
-            "TargetName" = "8:V2Architects_NumberSheets.addin"
+            "SourcePath" = "8:..\\V2Architects.NumberingByPath\\V2Architects.NumberingByPath.addin"
+            "TargetName" = "8:V2Architects.NumberingByPath.addin"
             "Tag" = "8:"
-            "Folder" = "8:_4AB6A0BCFB114E26AFB35F15117E9EB6"
+            "Folder" = "8:_0D384D3E3BD14785980DAAEF9CA8B2EF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6A24DFAA158A4FC19B6867319F2456B5"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:V2Architects.NumberingByPath, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_6A24DFAA158A4FC19B6867319F2456B5"
+                    {
+                    "Name" = "8:V2Architects.NumberingByPath.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\V2Architects.NumberingByPath\\bin\\Release\\V2Architects.NumberingByPath.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_C7F39589D7894967A23BD4CA324ACD8D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8CB7DEB61AE94641841650503E603EEF"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:V2Architects.NumberingByPath, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_8CB7DEB61AE94641841650503E603EEF"
+                    {
+                    "Name" = "8:V2Architects.NumberingByPath.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\V2Architects.NumberingByPath\\bin\\Release\\V2Architects.NumberingByPath.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_9352C2E982B94CD2A6BAFA6A9755E383"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A13F9CE53FD84F4ABD526F0705C9B93F"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:V2Architects.NumberingByPath, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_A13F9CE53FD84F4ABD526F0705C9B93F"
+                    {
+                    "Name" = "8:V2Architects.NumberingByPath.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\V2Architects.NumberingByPath\\bin\\Release\\V2Architects.NumberingByPath.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_31B709C880C24C50A102E45B6553038F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B5F929A01A374E72B20D8209DDB99636"
+            {
+            "SourcePath" = "8:..\\V2Architects.NumberingByPath\\V2Architects.NumberingByPath.addin"
+            "TargetName" = "8:V2Architects.NumberingByPath.addin"
+            "Tag" = "8:"
+            "Folder" = "8:_071A2235C0D14C5CAF4E5226959ED90F"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -218,9 +396,9 @@
         }
         "Folder"
         {
-            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_41ACD0E35ECA4A6EA4DD4376BA18EFF5"
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_071A2235C0D14C5CAF4E5226959ED90F"
             {
-            "DefaultLocation" = "8:[AppDataFolder]\\Autodesk\\Revit\\Addins\\2022\\"
+            "DefaultLocation" = "8:C:\\ProgramData\\Autodesk\\Revit\\Addins\\2022"
             "Name" = "8:Addins Folder 2022"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -230,33 +408,9 @@
                 {
                 }
             }
-            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_4AB6A0BCFB114E26AFB35F15117E9EB6"
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_0D384D3E3BD14785980DAAEF9CA8B2EF"
             {
-            "DefaultLocation" = "8:[AppDataFolder]\\Autodesk\\Revit\\Addins\\2019\\"
-            "Name" = "8:Addins Folder 2019"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:ADDINFOLDER2019"
-                "Folders"
-                {
-                }
-            }
-            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_6489709EC2474B39A992DFE0CE198BE3"
-            {
-            "DefaultLocation" = "8:[AppDataFolder]\\Autodesk\\Revit\\Addins\\2020\\[Manufacturer]\\NumberSheets"
-            "Name" = "8:Application Folder 2020"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:TARGETDIR2020"
-                "Folders"
-                {
-                }
-            }
-            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_65252DC508124341BA0EB8CFF906C603"
-            {
-            "DefaultLocation" = "8:[AppDataFolder]\\Autodesk\\Revit\\Addins\\2020\\"
+            "DefaultLocation" = "8:C:\\ProgramData\\Autodesk\\Revit\\Addins\\2020"
             "Name" = "8:Addins Folder 2020"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -266,9 +420,9 @@
                 {
                 }
             }
-            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_69EAC508616E4A17A722601D23309DA0"
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_114113467B1C46F2BDE61BF7BC07C3E9"
             {
-            "DefaultLocation" = "8:[AppDataFolder]\\Autodesk\\Revit\\Addins\\2021\\"
+            "DefaultLocation" = "8:C:\\ProgramData\\Autodesk\\Revit\\Addins\\2021"
             "Name" = "8:Addins Folder 2021"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -278,21 +432,9 @@
                 {
                 }
             }
-            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_6D35DBA9C2E146968854A0B56C76EB1F"
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_31B709C880C24C50A102E45B6553038F"
             {
-            "DefaultLocation" = "8:[AppDataFolder]\\Autodesk\\Revit\\Addins\\2019\\[Manufacturer]\\NumberSheets"
-            "Name" = "8:#1925"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:TARGETDIR"
-                "Folders"
-                {
-                }
-            }
-            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_7673103761B04DEAA7AD632CF7F7E7BC"
-            {
-            "DefaultLocation" = "8:[AppDataFolder]\\Autodesk\\Revit\\Addins\\2022\\[Manufacturer]\\NumberSheets"
+            "DefaultLocation" = "8:C:\\ProgramData\\Autodesk\\Revit\\Addins\\2022"
             "Name" = "8:Application Folder 2022"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -302,14 +444,50 @@
                 {
                 }
             }
-            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_F3AAA8EFF1ED43A89BE2A214E24749AD"
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_61ABB781AD89466AA37E0E229413988E"
             {
-            "DefaultLocation" = "8:[AppDataFolder]\\Autodesk\\Revit\\Addins\\2021\\[Manufacturer]\\NumberSheets"
+            "DefaultLocation" = "8:C:\\ProgramData\\Autodesk\\Revit\\Addins\\2019"
+            "Name" = "8:Addins Folder 2019"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:ADDINFOLDER2019"
+                "Folders"
+                {
+                }
+            }
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_7663C9DF6C3541F6B931060324E9CB74"
+            {
+            "DefaultLocation" = "8:C:\\ProgramData\\Autodesk\\Revit\\Addins\\2021"
             "Name" = "8:Application Folder 2021"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:TARGETDIR2021"
+                "Folders"
+                {
+                }
+            }
+            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_9352C2E982B94CD2A6BAFA6A9755E383"
+            {
+            "DefaultLocation" = "8:C:\\ProgramData\\Autodesk\\Revit\\Addins\\2019"
+            "Name" = "8:#1925"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:TARGETDIR"
+                "Folders"
+                {
+                }
+            }
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_C7F39589D7894967A23BD4CA324ACD8D"
+            {
+            "DefaultLocation" = "8:C:\\ProgramData\\Autodesk\\Revit\\Addins\\2020"
+            "Name" = "8:Application Folder 2020"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:TARGETDIR2020"
                 "Folders"
                 {
                 }
@@ -329,22 +507,22 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:V2 Tools Number Sheets"
-        "ProductCode" = "8:{8BD463A0-52F9-4B03-9A97-9F42464EB990}"
-        "PackageCode" = "8:{9AE2FC5C-298F-4AD8-9213-FC488B94F39B}"
-        "UpgradeCode" = "8:{39778DB8-BC3C-40E5-AD78-3E8B873D4413}"
-        "AspNetVersion" = "8:2.0.50727.0"
+        "ProductName" = "8:V2 Tools NumberingByPath"
+        "ProductCode" = "8:{A76FDC11-8459-4B2F-B301-B88DDB090382}"
+        "PackageCode" = "8:{306F710E-3BBE-4E4F-B3DC-62F133DDAE86}"
+        "UpgradeCode" = "8:{73B73964-DCCF-44F5-B02D-6B3F6C32A330}"
+        "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:2.0.1"
+        "InstallAllUsers" = "11:TRUE"
+        "ProductVersion" = "8:1.1.0"
         "Manufacturer" = "8:V2Architects"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Setup NumberSheets"
+        "Title" = "8:Setup V2 NumberingByPath"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:PavelAltynnikov"
+        "ARPCONTACT" = "8:RoAgens"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -352,7 +530,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -363,7 +541,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_79CE7DC1F5EF4F68BEEE3C5B1EE2DFFC"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_BDE7AFE1B9424FECBAFFE1835169F41A"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -372,7 +550,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_152C5CC9D1B24703AFE0B489FCCDA8E8"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C32E237CE98947DB8FAE821DF25E1AE3"
                             {
                             "Name" = "8:[Manufacturer]"
                             "Condition" = "8:"
@@ -397,7 +575,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_1D19AFA9477F445085FBD193038D56F8"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_49579565A8AC482BB810E4346BFEF450"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -406,7 +584,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_7E04ED3494D84F1F8CA4D42C31F55197"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_4ABC1AEB188A41B980FA5A657E689182"
                             {
                             "Name" = "8:[Manufacturer]"
                             "Condition" = "8:"
