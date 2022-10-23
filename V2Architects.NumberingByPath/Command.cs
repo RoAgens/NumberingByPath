@@ -180,10 +180,10 @@ namespace V2Architects.NumberingByPath
             Selection sel = _uiApp.ActiveUIDocument.Selection;
             Reference pickedRef = null;
 
-            //SplinePickFilter selFilter = new SplinePickFilter();
+            SplinePickFilter selFilter = new SplinePickFilter();
 
-            //pickedRef = sel.PickObject(ObjectType.Element, selFilter, "Выбери сплайн");
-            pickedRef = sel.PickObject(ObjectType.Element, "Выбери сплайн");
+            pickedRef = sel.PickObject(ObjectType.Element, selFilter, "Выбери сплайн");
+            //pickedRef = sel.PickObject(ObjectType.Element, "Выбери сплайн");
             var t = _doc.GetElement(pickedRef);
             _detailNurbSpline = _doc.GetElement(pickedRef) as DetailNurbSpline;
             if (_detailNurbSpline == null)
@@ -192,19 +192,19 @@ namespace V2Architects.NumberingByPath
             }
         }
 
-        //public class SplinePickFilter : ISelectionFilter
-        //{
-        //    public bool AllowElement(Element e)
-        //    {
-        //        if (e == null) return false;
-        //        return (e.Category.Id.IntegerValue.Equals(
-        //        (int)BuiltInCategory.OST_Lines));
-        //    }
-        //    public bool AllowReference(Reference r, XYZ p)
-        //    {
-        //        return false;
-        //    }
-        //}
+        public class SplinePickFilter : ISelectionFilter
+        {
+            public bool AllowElement(Element e)
+            {
+                if (e == null) return false;
+                return (e.Category.Id.IntegerValue.Equals(
+                (int)BuiltInCategory.OST_Lines));
+            }
+            public bool AllowReference(Reference r, XYZ p)
+            {
+                return false;
+            }
+        }
 
         private void ShowReport()
         {
