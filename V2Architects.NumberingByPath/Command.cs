@@ -21,7 +21,7 @@ namespace V2Architects.NumberingByPath
         private UIApplication _uiApp;
         private Document _doc;
         private MainWindow _mainWindow;
-        private DetailNurbSpline _detailNurbSpline;
+        private CurveElement _detailNurbSpline;
         private int _count = 0;
         private string _mes = "";
 
@@ -68,17 +68,27 @@ namespace V2Architects.NumberingByPath
             NurbSpline nurbSpline = _detailNurbSpline.GeometryCurve as NurbSpline;
             IList<XYZ> points = nurbSpline.CtrlPoints;
             List<Room> rooms = points.Select(x => GetRoomOfGroup(x)).ToList();
+            rooms = rooms.Where(x => x != null).ToList();
             _count = rooms.Count;
 
-            int startNumbet = Convert.ToInt32(FirstNumber);
-            int i = -1;
+            int startNumbet = Convert.ToInt32(FirstNumber); int i = 0;
+
             List<Room> rooms1 = rooms.Distinct(new SortYearAscendingHelper()).ToList();
-            rooms1.ForEach(x => x.LookupParameter("Номер").Set($"{Prefix}{startNumbet + ++i}"));
+            rooms1.ForEach(x => x.LookupParameter("Номер").Set(GetRoomNumber(startNumbet + i++)));
 
             _count = rooms1.Count();
 
 
             ShowReport();
+        }
+
+        private string GetRoomNumber(int i)
+        {
+            int roomstartnumberlen = i.ToString().Length;
+
+            //string mask = FirstNumber.Remove(FirstNumber.Length - i.ToString().Length, i.ToString().Length);
+
+            return FirstNumber.Length > i.ToString().Length ? $"{Prefix}{FirstNumber.Remove(FirstNumber.Length - i.ToString().Length, i.ToString().Length)}{i}" : $"{Prefix}{i.ToString()}";
         }
 
         private class SortYearAscendingHelper : IEqualityComparer<Room>
@@ -99,10 +109,11 @@ namespace V2Architects.NumberingByPath
         /// Возвращает комнату, в которой находится точка
         private Room GetRoomOfGroup(XYZ point)
         {
-            FilteredElementCollector collector =
-            new FilteredElementCollector(_doc);
+            FilteredElementCollector collector = new FilteredElementCollector(_doc);
             collector.OfCategory(BuiltInCategory.OST_Rooms);
+
             Room room = null;
+
             foreach (Element elem in collector)
             {
                 room = elem as Room;
@@ -111,11 +122,12 @@ namespace V2Architects.NumberingByPath
                     // Точка в указанной комнате?
                     if (room.IsPointInRoom(point))
                     {
-                        break;
+                        return room;
                     }
                 }
             }
-            return room;
+
+            return null;
         }
 
         private string _Prefix { get; set; } = "00";
@@ -168,25 +180,31 @@ namespace V2Architects.NumberingByPath
             Selection sel = _uiApp.ActiveUIDocument.Selection;
             Reference pickedRef = null;
 
-            SplinePickFilter selFilter = new SplinePickFilter();
+            //SplinePickFilter selFilter = new SplinePickFilter();
 
-            pickedRef = sel.PickObject(ObjectType.Element, selFilter, "Выбери сплайн");
+            //pickedRef = sel.PickObject(ObjectType.Element, selFilter, "Выбери сплайн");
+            pickedRef = sel.PickObject(ObjectType.Element, "Выбери сплайн");
+            var t = _doc.GetElement(pickedRef);
             _detailNurbSpline = _doc.GetElement(pickedRef) as DetailNurbSpline;
+            if (_detailNurbSpline == null)
+            {
+                _detailNurbSpline = _doc.GetElement(pickedRef) as ModelNurbSpline;
+            }
         }
 
-        public class SplinePickFilter : ISelectionFilter
-        {
-            public bool AllowElement(Element e)
-            {
-                if (e == null) return false;
-                return (e.Category.Id.IntegerValue.Equals(
-                (int)BuiltInCategory.OST_Lines));
-            }
-            public bool AllowReference(Reference r, XYZ p)
-            {
-                return false;
-            }
-        }
+        //public class SplinePickFilter : ISelectionFilter
+        //{
+        //    public bool AllowElement(Element e)
+        //    {
+        //        if (e == null) return false;
+        //        return (e.Category.Id.IntegerValue.Equals(
+        //        (int)BuiltInCategory.OST_Lines));
+        //    }
+        //    public bool AllowReference(Reference r, XYZ p)
+        //    {
+        //        return false;
+        //    }
+        //}
 
         private void ShowReport()
         {
